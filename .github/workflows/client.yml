@@ -1,4 +1,7 @@
+# .github/workflows/client.yml
+
 name: client
+
 on:
   push:
     branches:
@@ -28,4 +31,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://fe-94-wjdpwdn-s3 \
             --delete
-        working-directory: ./my-agora-states-client/build
+        working-directory: ./my-agora-states-client
